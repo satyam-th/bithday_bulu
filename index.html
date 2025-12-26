@@ -626,7 +626,7 @@
         const DATA = {
             // Configuration for Date Lock
             config: {
-                testMode: true,        // Set to false to enforce the date check
+                testMode: false,        // Set to false to enforce the date check
                 targetMonth: 11,        // 0-indexed (0=Jan, 11=Dec)
                 targetDay: 26,          // The day to unlock
 
@@ -903,10 +903,10 @@
                 const btn = document.getElementById('landing-btn');
                 
                 if (this.state.isUnlocked) {
-                    title.innerText = "Midnight Garden"; // Surprise ready title
+                    title.innerText = "Click down button it's unlock"; // Surprise ready title
                     info.classList.add('hidden');
                     
-                    btn.innerText = "OPEN SURPRISE";
+                    btn.innerText = "Click here";
                     btn.classList.remove('locked-btn');
                     
                     // Reset fixed positioning if it ran away previously
